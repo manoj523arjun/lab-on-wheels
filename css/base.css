@@ -161,6 +161,20 @@ h2 {
 	font-size: 42px;
 }
 
+.btn {
+	border: none;
+	border-radius: 10px;
+}
+
+.btn-primary {
+	background-color: #009062;
+	color: #ffffff;
+}
+
+.btn-primary:hover {
+	background-color: rgba(0, 144, 98, 0.7);
+}
+
 .h4 {
 	font-size: 20px;
 }
@@ -223,12 +237,17 @@ h2 {
 	margin-bottom: 20px;
 }
 
+.mg-btm-10 {
+	margin-bottom: 10px;
+}
+
 .section-container {
 	padding: 45px 0;
 }
 
 .section-heading {
 	text-align: center;
+	font-family: "OpenSans-ExtraBold";
 }
 
 .owl-carousel {
@@ -260,4 +279,18 @@ h2 {
 
 .owl-carousel-primary .owl-dots:not(.disabled) .owl-dot.active {
 	background: #000000;
+}
+
+.form-control {
+	border-color: #ced4da;
+	border-radius: 10px;
+	border-width: 2px;
+}
+
+input.form-control {
+	min-height: 52px;
+}
+
+textarea.form-control {
+	min-height: 152px;
 }
