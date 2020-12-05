@@ -1,0 +1,151 @@
+.navbar-brand > img {
+	width: 250px;
+}
+
+#headerNavBar {
+	font-family: "OpenSans-SemiBold";
+}
+
+#headerNavBar > ul > li > a {
+	padding: 10px 25px;
+	color: #606060;
+}
+
+#headerNavBar > ul > li > a:hover {
+	padding: 10px 25px;
+	color: #009062;
+}
+
+.banner-container {
+	position: relative;
+}
+
+.banner-container .banner-heading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	line-height: 1.8em;
+	margin-bottom: 0;
+}
+
+.about-img {
+	background-image: url('../images/about.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 40% 0;
+}
+
+.team-container {
+	display: flex;
+	padding: 0 15%;
+	color: #ffffff;
+}
+
+.team-container .team-person-img {
+	margin-right: 30px;
+	min-width: 200px;
+	flex: 1;
+}
+
+.team-container .team-person-img h3 {
+	font-family: "OpenSans-SemiBold";
+	margin: 20px 0 5px 0;
+}
+
+.team-container .team-person-img p {
+	font-family: "OpenSans-LightItalic";
+}
+
+.team-container .team-content {
+	flex: 2;
+}
+
+.social-media-container img {
+	width: 30px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.footer-logo {
+	margin-top: -20px;
+    margin-left: -17px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.footer-links a:hover {
+	color: #000000;
+}
+
+@media screen and (max-width: 1199px) {
+	#headerNavBar > ul > li > a {
+		padding: 10px 20px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.menu-toggle-btn .navbar-toggler {
+		display: inline-block;
+	}
+
+	.menu-toggle-btn {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+
+	.collapse:not(.show) {
+		display: none !important;
+	}
+
+	#headerNavBar {
+		position: absolute;
+	    width: 100%;
+	    z-index: 99;
+	    left: 0;
+	    top: 70px;
+	    padding: 0;
+	}
+
+	 #headerNavBar > ul {
+	 	flex-direction: column;
+	 	background: #009062;
+	 	width: 100%;
+	 	text-align: center;
+	 }
+
+	 #headerNavBar > ul > li > a {
+	 	color: #ffffff;
+	 }
+
+	 .banner-heading {
+	 	font-size: 36px;
+	 }
+
+	 .team-container {
+	 	padding: 0;
+	 }
+}
+
+@media screen and (max-width: 767px) {
+	 .banner-heading {
+	 	font-size: 28px;
+	 }
+
+	 .about-img {
+	 	height: 220px;
+	 }
+
+	 .team-container {
+	 	flex-direction: column;
+	 	align-items: center;
+	 	justify-content: center;
+	 }
+}
+
+@media screen and (max-width: 575px) {
+	 .banner-heading {
+	 	font-size: 24px;
+	 }
+}
