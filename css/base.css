@@ -191,8 +191,16 @@ h2 {
 	text-align: center;
 }
 
+.text-left {
+	text-align: left;
+}
+
 .bg-primary-color {
 	background-color: #009062;
+}
+
+.bg-light-grey-color {
+	background-color: #e3e5e4;
 }
 
 .list-default {
@@ -225,6 +233,10 @@ h2 {
 	top: 8px;
 }
 
+.list-white {
+	color: #ffffff;
+}
+
 .list-white li::before {
 	background-color: #ffffff;
 }
@@ -241,13 +253,30 @@ h2 {
 	margin-bottom: 10px;
 }
 
+.mg-rt-10 {
+	margin-right: 10px;
+}
+
+.mg-rt-30 {
+	margin-right: 30px;
+}
+
+.mg-btm-0 {
+	margin-bottom: 0;
+}
+
 .section-container {
 	padding: 45px 0;
 }
 
 .section-heading {
 	text-align: center;
-	font-family: "OpenSans-ExtraBold";
+	font-family: "OpenSans-Bold";
+}
+
+.pd-l-r-60 {
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
 .owl-carousel {
@@ -273,12 +302,27 @@ h2 {
 	margin: 0 5px;
 }
 
+.owl-carousel.dots-lg .owl-dots:not(.disabled) {
+	bottom: -40px;
+}
+
+.owl-carousel.dots-lg .owl-dots:not(.disabled) .owl-dot {
+	width: 20px;
+	height: 20px;
+	margin: 0 10px;
+}
+
 .owl-carousel .owl-dots:not(.disabled) .owl-dot.active {
 	background: #009062;
 }
 
-.owl-carousel-primary .owl-dots:not(.disabled) .owl-dot.active {
+.owl-carousel-primary .owl-dots:not(.disabled) .owl-dot.active,
+.owl-carousel-default .owl-dots:not(.disabled) .owl-dot.active {
 	background: #000000;
+}
+
+.owl-carousel-default .owl-dots:not(.disabled) .owl-dot {
+	background: #009062;
 }
 
 .form-control {
@@ -293,4 +337,29 @@ input.form-control {
 
 textarea.form-control {
 	min-height: 152px;
+}
+
+.font-semibold {
+  font-family: "OpenSans-SemiBold";
+}
+
+.flex-full-height {
+    display: flex;
+}
+
+.flex-full-height .flex-box {
+    flex-basis: 100%;
+}
+
+.flex-box-2 {
+	flex: 2;
+}
+
+.flex-box-3 {
+	flex: 3;
+}
+
+.full-width {
+	max-width: 1440px;
+	margin: 0 auto;
 }

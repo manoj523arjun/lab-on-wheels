@@ -16,6 +16,10 @@
 	color: #009062;
 }
 
+#headerNavBar > ul > li.active > a {
+	color: #009062;
+}
+
 .banner-container {
 	position: relative;
 }
@@ -94,6 +98,24 @@
 	text-transform: uppercase;
 }
 
+.quality-grid-box {
+	padding: 15px;
+	margin-top: 65px;
+}
+
+.grid-img {
+	margin-top: -65px;
+}
+
+.grid-img img {
+	width: 100px;
+}
+
+.difference-block {
+	padding: 15px;
+	border-radius: 0 35px 35px;
+}
+
 @media screen and (max-width: 1199px) {
 	#headerNavBar > ul > li > a {
 		padding: 10px 20px;
@@ -142,6 +164,10 @@
 	 .team-container {
 	 	padding: 0;
 	 }
+
+	 .advantages-block {
+	 	flex-direction: column;
+	 }
 }
 
 @media screen and (max-width: 767px) {
@@ -161,6 +187,10 @@
 
 	 .footer-logo {
 	 	margin-top: 20px;
+	 }
+
+	 .page-banner .page-heading {
+	 	font-size: 42px;
 	 }
 }
 

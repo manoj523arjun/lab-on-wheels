@@ -6,8 +6,6 @@
 	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">  
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="carousel/owl.theme.default.min.css">
-	<link rel="stylesheet" type="text/css" href="carousel/owl.carousel.min.css">
 
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -28,18 +26,18 @@
 				<div class="collapse navbar-collapse" id="headerNavBar">
 					<ul class="nav navbar-nav mr-auto navbar-right">
 					  <li class="nav-item">
-					    <a class="nav-link" href="./about-us.html">Home</a>
+					    <a class="nav-link" href="./">Home</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" href="./programmes.html">Our Solution</a>
+					    <a class="nav-link" href="./our-solutions.html">Our Solution</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" href="./admissions.html">Get Involved</a>
+					    <a class="nav-link" href="./get-involved.html">Get Involved</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" href="./partners.html">Community</a>
+					    <a class="nav-link" href="#">Community</a>
 					  </li>
-					  <li class="nav-item">
+					  <li class="nav-item active">
 					    <a class="nav-link" href="./contact-us.html">Contact Us</a>
 					  </li>
 					</ul>
@@ -137,11 +135,11 @@
 				<div class="col-md-4">
 					<img src="./images/logo-footer.png" class="footer-logo" />
 					<ul class="footer-links list-default text-white-color">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Our Solutions</a></li>
-						<li><a href="#">Get Involved</a></li>
+						<li><a href="./">Home</a></li>
+						<li><a href="./our-solutions.html">Our Solutions</a></li>
+						<li><a href="./get-involved.html">Get Involved</a></li>
 						<li><a href="#">Community</a></li>
-						<li><a href="#">Contact Us</a></li>
+						<li><a href="./contact-us.html">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
@@ -154,36 +152,5 @@
 	</footer>
 
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="carousel/owl.carousel.min.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			const owlCarouselOptions = {
-				margin: 0,
-			    loop: true,
-			    nav: false,
-			    autoplay: false,
-			    dots: true,
-			    responsiveClass: true,
-			    autoplayTimeout: 2000,
-			    responsive:{
-			        0:{
-			            items:1
-			        },
-			        576: {
-			        	items:1
-			        },
-			        992:{
-			            items:1
-			        },
-			        1200:{
-			            items:1
-			        }
-			    }
-			};
-			$('#headerSlider').owlCarousel(owlCarouselOptions);
-			$("#leadershipTeamSlider").owlCarousel(owlCarouselOptions);
-		});
-	</script>
 </body>
 </html>
