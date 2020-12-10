@@ -29,9 +29,12 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	line-height: 1.8em;
+	line-height: 1.4em;
 	margin-bottom: 0;
 	font-family: "OpenSans-ExtraBold";
+	letter-spacing: 0;
+	width: 75%;
+	max-width: 1440px;
 }
 
 .about-img {
@@ -39,6 +42,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 40% 0;
+}
+
+#contactUs {
+	background-image: url('../images/contact-us.jpg');
 }
 
 .team-container {
@@ -86,7 +93,7 @@
 /* contact us styles */
 
 .page-banner {
-	background-image: url('../images/banner-two.jpg');
+	background-image: url('../images/banner-four.jpg');
 	background-position: 0 -110px;
 	background-size: cover;
 }
@@ -95,7 +102,7 @@
 	font-size: 60px;
 	font-family: "OpenSans-ExtraBold";
 	padding: 100px 0;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .quality-grid-box {
