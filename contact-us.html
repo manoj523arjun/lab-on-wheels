@@ -83,6 +83,13 @@
 
 						<div class="col-sm-12 mg-btm-20">
 							<div class="form-group">
+								<label class="input-label">Company Name</label>
+								<input type="text" class="form-control" name="companyName" id="companyName" required/>
+							</div>
+						</div>
+
+						<div class="col-sm-12 mg-btm-20">
+							<div class="form-group">
 								<label class="input-label text-area-label">Write Message</label>
 								<textarea class="form-control" name="message"></textarea>
 							</div>
@@ -152,5 +159,39 @@
 	</footer>
 
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#contactUsForm").validate();
+
+			$("#contactUsForm").on('submit', function (event) {
+				if ($("#contactUsForm").valid()) {
+					event.preventDefault();
+					var data = {
+						firstName: $("[name='firstName']").val(),
+						lastName: $("[name='lastName']").val(),
+						email: $("[name='emailAddress']").val(),
+						phoneNumber: $("[name='phoneNumber']").val(),
+						companyName: $("[name='companyName']").val(),
+						message: $("[name='message']").val()
+					};
+					console.log(data);
+					$.ajax({
+				        type: "POST",
+				        url: "./send_email.php",
+				        headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+				        data: data,
+				        success: function (response) {
+				        	alert(response);
+				        },
+				        error: function(error, response){
+				        	console.log(error, response);
+				        }
+				    });
+				}
+			});
+		});
+	</script>
 </body>
 </html>

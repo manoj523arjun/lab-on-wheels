@@ -306,12 +306,6 @@ h2 {
 	bottom: -40px;
 }
 
-.owl-carousel.dots-lg .owl-dots:not(.disabled) .owl-dot {
-	width: 20px;
-	height: 20px;
-	margin: 0 10px;
-}
-
 .owl-carousel .owl-dots:not(.disabled) .owl-dot.active {
 	background: #009062;
 }
@@ -337,6 +331,11 @@ input.form-control {
 
 textarea.form-control {
 	min-height: 152px;
+}
+
+.error {
+	color: #b91f1f;
+	margin-top: 5px;
 }
 
 .font-semibold {
