@@ -7,7 +7,7 @@
    $companyName = $_REQUEST["companyName"];
    $message = $_REQUEST["message"];
 
-   $to = "ashwini@saicorp.in";
+   $to = "manoj523arjun@gmail.com";
    $subject = "Contact details of $fName";
    
    $message = "<table>";
@@ -23,7 +23,7 @@
 
    $message .= "</table>";
    
-   $header = "From:ashwini@saicorp.in \r\n";
+   $header = "From:manoj523arjun@gmail.com \r\n";
    // $header .= "Cc:afgh@somedomain.com \r\n";
    $header .= "MIME-Version: 1.0\r\n";
    $header .= "Content-type: text/html\r\n";
