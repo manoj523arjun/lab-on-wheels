@@ -5,9 +5,9 @@
    $email = $_REQUEST["email"];
    $phoneNumber = $_REQUEST["phoneNumber"];
    $companyName = $_REQUEST["companyName"];
-   $message = $_REQUEST["message"];
+   $messageValue = $_REQUEST["message"];
 
-   $to = "manoj523arjun@gmail.com";
+   $to = "ashwini@saicorp.in";
    $subject = "Contact details of $fName";
    
    $message = "<table>";
@@ -19,11 +19,11 @@
    $message .= "<tr><td>Phone Number</td><td>:</td><td>$phoneNumber</td></tr>";
 
    $message .= "<tr><td>Company Name</td><td>:</td><td>$companyName</td></tr>";
-   $message .= "<tr><td>Message</td><td>:</td><td>$message</td></tr>";
+   $message .= "<tr><td>Message</td><td>:</td><td>$messageValue</td></tr>";
 
    $message .= "</table>";
    
-   $header = "From:manoj523arjun@gmail.com \r\n";
+   $header = "From:ashwini@saicorp.in \r\n";
    // $header .= "Cc:afgh@somedomain.com \r\n";
    $header .= "MIME-Version: 1.0\r\n";
    $header .= "Content-type: text/html\r\n";
