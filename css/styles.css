@@ -16,8 +16,13 @@
 	color: #009062;
 }
 
+#headerNavBar > ul > li.active {
+	background-color: #050708;
+	border-radius: 10px;
+}
+
 #headerNavBar > ul > li.active > a {
-	color: #009062;
+	color: #ffffff;
 }
 
 .banner-container {
@@ -87,7 +92,7 @@
 }
 
 .footer-links a:hover {
-	color: #000000;
+	color: #050708;
 }
 
 /* contact us styles */
@@ -203,6 +208,6 @@
 
 @media screen and (max-width: 575px) {
 	 .banner-heading {
-	 	font-size: 24px;
+	 	font-size: 18px;
 	 }
 }
