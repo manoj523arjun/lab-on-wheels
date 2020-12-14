@@ -31,15 +31,16 @@
 
 .banner-container .banner-heading {
 	position: absolute;
-	top: 50%;
+	bottom: 15%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0%);
 	line-height: 1.4em;
 	margin-bottom: 0;
 	font-family: "OpenSans-ExtraBold";
 	letter-spacing: 0;
 	width: 75%;
 	max-width: 1440px;
+	font-size: 36px;
 }
 
 .about-img {
@@ -53,10 +54,15 @@
 	background-image: url('../images/contact-us.jpg');
 }
 
+#ourSolution {
+	background-image: url('../images/solution.jpg');
+}
+
 .team-container {
 	display: flex;
 	padding: 0 15%;
 	color: #ffffff;
+	align-items: center;
 }
 
 .team-container .team-person-img {
@@ -76,6 +82,7 @@
 
 .team-container .team-content {
 	flex: 2;
+	margin-top: -60px;
 }
 
 .social-media-container img {
@@ -169,8 +176,8 @@
 	 	color: #ffffff;
 	 }
 
-	 .banner-heading {
-	 	font-size: 36px;
+	 .banner-container .banner-heading {
+	 	font-size: 28px;
 	 }
 
 	 .team-container {
@@ -180,11 +187,15 @@
 	 .advantages-block {
 	 	flex-direction: column;
 	 }
+
+	 .team-container .team-content {
+	 	margin-top: 0;
+	 }
 }
 
 @media screen and (max-width: 767px) {
-	 .banner-heading {
-	 	font-size: 28px;
+	 .banner-container .banner-heading {
+	 	font-size: 24px;
 	 }
 
 	 .about-img {
@@ -207,7 +218,7 @@
 }
 
 @media screen and (max-width: 575px) {
-	 .banner-heading {
+	 .banner-container .banner-heading {
 	 	font-size: 18px;
 	 }
 }
